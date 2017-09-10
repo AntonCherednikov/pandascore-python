@@ -5,7 +5,7 @@ from setuptools import find_packages, setup
 # Package meta-data.
 NAME = 'pandascore'
 DESCRIPTION = 'A pandascore.co API client library for Python'
-URL = 'https://github.com/tiamat-studios/pypandascore'
+URL = 'https://github.com/tiamat-studios/pandascore-python'
 EMAIL = 'adam.boscarino@tiamat-studios.com'
 AUTHOR = 'Tiamat Studios'
 
