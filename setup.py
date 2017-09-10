@@ -11,7 +11,7 @@ AUTHOR = 'Tiamat Studios'
 
 here = os.path.abspath(os.path.dirname(__file__))
 
-README = open(os.path.join(here, 'README.md')).read()
+README = open(os.path.join(here, 'PYPIREADME.rst')).read()
 REQUIREMENTS = [
     line.strip()
     for line in open(
