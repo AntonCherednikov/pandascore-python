@@ -50,6 +50,6 @@ docker-test: clean
 	docker build -t "pypandascore-docker" .
 	docker run pypandascore-docker
 
-release:
+release: clean
 	python setup.py sdist bdist_wheel
 	twine upload dist/*
