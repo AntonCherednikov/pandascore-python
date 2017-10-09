@@ -20,20 +20,20 @@ pip install pandascore
 Create an instance of PandaScore with your access token:
 
 ```
-from pandascore import pandascore
-ps = pandascore.PandaScore(access_token='put a token here')
+import pandascore
+ps = pandascore.Client(access_token='put a token here')
 ```
 
 Return a list of league dicts:
 
 ```
-ps.get_leagues(videogame_id=1)
+ps.all_games.get_leagues(videogame_id=1)
 ```
 
-Or just get one league dict:
+Or just get one League of Legends champion dict:
 
 ```
-ps.get_league(league_id=2132)
+ps.lol.get_champion(champion_id=48)
 ```
 
 ## Testing
