@@ -96,7 +96,7 @@ class Api(object):
             msg = [data[m] for m in ("id", "message") if m in data][1]
             raise DataReadError(msg)
 
-        if 'last' in req.links:
+        if 'last' in req.links and data != []:
             return self.__pagination(url, params, data, req)
         else:
             return data
